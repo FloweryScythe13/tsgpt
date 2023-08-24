@@ -1,6 +1,6 @@
 import pandas as pd
 from datasets import load_dataset
-from utils import util
+from src.utils import util
 from hamilton.function_modifiers import extract_fields
 
 
