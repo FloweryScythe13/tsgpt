@@ -1,20 +1,25 @@
 import pandas as pd
 from datasets import load_dataset
 from utils import util
-from hamilton.function_modifiers import extract_fields
+from hamilton.function_modifiers import extract_fields, config
 
 
-PROJ_ROOT = util.get_proj_root()
-
-def miws_dataset() -> pd.DataFrame:
+@config.when(loader="hf")
+def miws_dataset__hf(project_root: str = util.get_proj_root()) -> pd.DataFrame:
     """Load the MIWS dataset using the HuggingFace Dataset library"""
-    dataset = load_dataset(f"{PROJ_ROOT}/data/MIWS_Seed_Complete.csv", split="train")
+    dataset = load_dataset(f"{project_root}/data2/", split="train")
     return dataset.to_pandas()
+
+
+@config.when(loader="pd")
+def miws_dataset__pd(project_root: str = util.get_proj_root()) -> pd.DataFrame:
+    """Load the MIWS dataset using the HuggingFace Dataset library"""
+    return pd.read_csv(f"{project_root}/data2/MIWS_Seed_Complete.csv", delimiter=',', quotechar='"')
 
 
 def clean_dataset(miws_dataset: pd.DataFrame) -> pd.DataFrame:
     """Remove duplicates and drop unecessary columns"""
-    cleaned_df = cleaned_df[["Text", "Label", "Geographical_Location"]]
+    cleaned_df = miws_dataset[["Text", "Label", "Geographical_Location"]]
     return cleaned_df
 
 
