@@ -1,0 +1,7 @@
+Analyze the following text to determine if it glorifies or supports the following entity:
+
+Entity: {entity_name}
+
+Text: '{user_input}'
+
+The answer should be one of the following: Glorifying, Supporting, Neutral, Negative.

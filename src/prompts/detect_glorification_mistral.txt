@@ -1,0 +1,1 @@
+Does the text glorify, support, or speak neutrally or negatively about the entity? Classify the sentiment as one of Glorifying, Supporting, Neutral, Negative:

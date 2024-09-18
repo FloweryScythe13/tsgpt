@@ -1,0 +1,7 @@
+Analyze the following text for its emotional tone (affect):
+
+'{user_input}'
+
+The affect is likely one of the following: Positive, Negative, Neutral, Mixed. Please classify:
+
+Answer with only a single word, which is the classification label you give to the above text, nothing else:

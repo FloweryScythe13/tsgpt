@@ -1,1 +1,10 @@
-
+openai
+faiss-cpu
+tiktoken
+langchain==0.2.13
+sf-hamilton
+python-decouple
+pandas
+openpyxl
+langchain-community
+neo4j

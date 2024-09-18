@@ -1,0 +1,10 @@
+Based on the following content and context, determine the appropriate enforcement action:
+
+Content: '{user_input}'
+Radicalization detected: {radicalization_flag}
+DIO Mentioned: {dio_name} (Category: {dio_category})
+System's Classification of Content Sentiment Towards DIO: {dio_sentiment}
+
+Policy Summary: Any entity mentioned in the 'DIO Mentioned' field is from the Dangerous Individuals & Organizations (DIO) blacklist. If this entity is mentioned in the user content in a supportive, glorifying, or representative manner, it constitutes a violation of our platform's community standards. Our platform does not allow content that glorifies, supports, or represents individuals or organizations involved in violence, hate, or terrorism. These entities include terrorist groups, hate groups, violent non-state actors, and others who advocate or engage in violent activities. Any content that endorses or supports these entities or their actions is a policy violation. Users may discuss these topics neutrally or in a condemnatory manner, but any positive portrayal is prohibited. 
+
+Based on this policy, choose one of the following enforcement actions: Warning, Limited Visibility, Temporary Suspension, Permanent Ban. Provide a brief explanation for your choice.
